@@ -1,0 +1,28 @@
+{
+  "name": "cypress-ui-typescript",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "cypress run --browser chrome",
+    "test:smoke": "cypress run --browser chrome --env grepTags=@smoke",
+    "test:regression": "cypress run --browser chrome --env grepTags=@regression",
+    "test:headed": "cypress open",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint cypress --ext .ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "allure:generate": "allure generate allure-results -o allure-report --clean",
+    "allure:open": "allure open allure-report"
+  },
+  "devDependencies": {
+    "allure-cypress": "3.0.0",
+    "cypress": "13.13.0",
+    "@cypress/grep": "4.1.0",
+    "typescript": "5.4.5",
+    "@typescript-eslint/eslint-plugin": "7.14.0",
+    "@typescript-eslint/parser": "7.14.0",
+    "eslint": "8.57.0",
+    "prettier": "3.3.0",
+    "dotenv": "16.4.5"
+  }
+}

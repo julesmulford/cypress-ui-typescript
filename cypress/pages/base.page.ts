@@ -7,8 +7,8 @@ export abstract class BasePage {
     return cy.get(selector);
   }
 
-  protected getByRole(role: string, options?: { name?: string | RegExp }): Cypress.Chainable<JQuery<HTMLElement>> {
-    return cy.findByRole(role, options);
+  protected getByRole(role: string, _options?: { name?: string | RegExp }): Cypress.Chainable<JQuery<HTMLElement>> {
+    return cy.get(`[role="${role}"]`);
   }
 
   protected waitForUrl(urlFragment: string): void {

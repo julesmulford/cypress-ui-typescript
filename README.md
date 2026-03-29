@@ -1,6 +1,6 @@
 # cypress-ui-typescript
 
-Enterprise Cypress 13 UI test framework for OrangeHRM — TypeScript, Page Object Model, Allure reporting.
+Cypress 13 UI test framework for OrangeHRM — TypeScript, Page Object Model, Allure reporting.
 
 ## Suggested GitHub Repo Name
 
